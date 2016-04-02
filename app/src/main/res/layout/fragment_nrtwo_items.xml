@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emrox_riprap.recime.NRTwoItemsFragment"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ingredient"
+            android:id="@+id/textView3"
+            android:layout_margin="@dimen/et_padding" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_ingredient_name"
+            android:layout_margin="@dimen/et_padding"
+            android:text="Ingredient name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/s_amount"
+            android:spinnerMode="dialog"
+            android:prompt="@string/measurement_quantity_prompt"
+            android:entries="@array/measurement_quantity"
+            android:layout_marginRight="@dimen/et_padding"
+            android:layout_marginBottom="@dimen/et_padding" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/s_measurement"
+            android:prompt="@string/measurement_size_prompt"
+            android:entries="@array/measurement_size"
+            android:layout_marginRight="@dimen/et_padding"
+            android:layout_marginTop="@dimen/et_padding"
+            android:layout_marginBottom="@dimen/et_padding" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/b_add"
+            android:layout_marginRight="@dimen/et_padding"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@android:id/list"
+        android:layout_margin="@dimen/list_item_margin"
+        android:choiceMode="singleChoice"
+        android:layout_weight="1.10" />
+
+</LinearLayout>

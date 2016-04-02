@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emrox_riprap.recime.NRThreeOvenTempFragment"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Oven Temperature"
+        android:id="@+id/textView4"
+        android:layout_margin="@dimen/et_padding" />
+
+    <NumberPicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/np_oven_temps"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/picker_side_margin"
+        android:layout_marginRight="@dimen/picker_side_margin" />
+
+</LinearLayout>
